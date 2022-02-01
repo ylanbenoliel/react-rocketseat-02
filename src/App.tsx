@@ -4,14 +4,9 @@ import { SideBar } from "./components/SideBar";
 import { Content } from "./components/Content";
 
 import { api } from "./services/api";
+import { GenreResponseProps } from "./interfaces/Genre";
 
 import "./styles/global.scss";
-
-interface GenreResponseProps {
-  id: number;
-  name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
-  title: string;
-}
 
 export function App() {
   const [selectedGenreId, setSelectedGenreId] = useState(1);
